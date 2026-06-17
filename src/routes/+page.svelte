@@ -1,2 +1,11 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+	let { data } = $props();
+</script>
+
+<main class="page">
+	<section class="hero">
+		<h1>{data.homepage.heroHeading}</h1>
+		<p>{data.homepage.heroText}</p>
+		<button>{data.homepage.buttonText}</button>
+	</section>
+</main>
